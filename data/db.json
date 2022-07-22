@@ -1,0 +1,32 @@
+{
+    "movies" : [
+        {
+            "title": "127 Hours",
+            "body": "lorem ipsum...",
+            "rating": "9.0",
+            "genre": "drama",
+            "id": 1
+          },
+          {
+            "title": "Donnie Darko",
+            "body": "lorem ipsum...",
+            "rating": "9.0",
+            "genre": "sci-Fi",
+            "id": 2
+          },
+          {
+            "title": "Brokeback Mountain",
+            "body": "lorem ipsum...",
+            "rating": "9.0",
+            "genre": "romance",
+            "id": 3
+          },
+          {
+            "title": "The Pianist",
+            "body": "lorem ipsum...",
+            "rating": "8.89",
+            "genre": "drama",
+            "id": 4
+          }
+    ]
+}
