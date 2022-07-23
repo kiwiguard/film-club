@@ -3,6 +3,7 @@ import Home from "./Components/Home";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import Movies from "./Components/Movies";
 import MovieDetails from "./Components/MovieDetails";
+import NotFound from "./Components/NotFound";
 
 function App() {
   return (
@@ -19,6 +20,9 @@ function App() {
             </Route>
             <Route exact path="/movies/:id">
               <MovieDetails />
+            </Route>
+            <Route path="*">
+              <NotFound />
             </Route>
           </Switch>
         </div>

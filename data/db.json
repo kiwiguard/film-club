@@ -1,32 +1,53 @@
 {
-    "movies" : [
-        {
-            "title": "127 Hours",
-            "body": "lorem ipsum...",
-            "rating": "9.0",
-            "genre": "drama",
-            "id": 1
-          },
-          {
-            "title": "Donnie Darko",
-            "body": "lorem ipsum...",
-            "rating": "9.0",
-            "genre": "sci-Fi",
-            "id": 2
-          },
-          {
-            "title": "Brokeback Mountain",
-            "body": "lorem ipsum...",
-            "rating": "9.0",
-            "genre": "romance",
-            "id": 3
-          },
-          {
-            "title": "The Pianist",
-            "body": "lorem ipsum...",
-            "rating": "8.89",
-            "genre": "drama",
-            "id": 4
-          }
-    ]
+  "movies": [
+    {
+      "title": "127 Hours",
+      "excerpt": "Den sanna berättelsen om äventyraren Aron Ralston som under en klättring råkar ut för en olycka och blir fastkilad i en bergsklyfta. Medan han svävar mellan hopp och uppgivenhet går han igenom sitt liv, sina framgångar, motgångar och tiden han fått spendera med de han älskar. Tankarna ger honom styrka och han fattar ett beslut: Han ska överleva.",
+      "rating": "9.0",
+      "genre": "drama",
+      "id": 1
+    },
+    {
+      "title": "Donnie Darko",
+      "excerpt": "16-årige Donnie är inte direkt den typiske amerikanske tonårskillen, han ser och upplever underliga saker, saker som är menade för honom. En natt kraschar en flygplansmotor ner i Donnies hus, av en tillfällighet blir han räddad av en man i kanindräkt som heter Frank. Frank säger att världen kommer gå under om 28 dagar, 6 timmar, 42 minuter och 12 sekunder. Frank meddelar Donnie att han nu har en annan, högre mening med livet. Frank säger åt honom vad han ska göra och Donnie lyder för att han dels känner en tacksamhet skuld till Frank och dels för att han nu ser en mening med livet. Filmen grundar sig även på Deus Ex Machina. ( Som kan tolkas som Guds handling \"An act of God\". ) Donnie blir på grund av Frank väldigt intresserad av tidsresor och han inser så småningom att han är avsett att förändra något, frågan är bara vad?",
+      "rating": "9.0",
+      "genre": "sci-Fi",
+      "id": 2
+    },
+    {
+      "title": "Brokeback Mountain",
+      "excerpt": "Med Wyoming och Texas mäktiga landskap som bakgrund, berättar Brokeback Mountain historien om två unga män, rancharbetaren Ennis Del Mar och rodeocowboyen Jack Twist, som träffas sommaren 1963 och om det oväntade och livslånga band de knyter. De komplikationer, den lycka och den tragedi de möter på vägen utgör ett starkt bevis för kärlekens styrka och uthållighet.",
+      "rating": "9.0",
+      "genre": "romance",
+      "id": 3
+    },
+    {
+      "title": "The Pianist",
+      "excerpt": "Den gudabenådade pianisten Wladyslaw Szpilman lever i Warsawa under tiden för nazisternas utbredning över Europa. Han är jude och tvingas att på nära håll uppleva de restriktioner som sätts upp för honom, hans släkt och hans folk. När hans familj skickas till arbetsläger lyckas Wladyslaw fly och gömmer sig i stadens ruiner. Lidande, förnedring och kamp för överlevnad blir hans vardag. En dag blir han upptäckt av en tysk officer...",
+      "rating": "8.89",
+      "genre": "drama",
+      "id": 4
+    },
+    {
+      "title": "Kill Bill: Vol. 1",
+      "excerpt": "An assassin is shot by her ruthless employer, Bill, and other members of their assassination circle – but she lives to plot her vengeance.",
+      "rating": "5.4",
+      "genre": "action",
+      "id": 5
+    },
+    {
+      "title": "The Last King of Scotland",
+      "excerpt": "Young Scottish doctor, Nicholas Garrigan decides it's time for an adventure after he finishes his formal education, so he decides to try his luck in Uganda, and arrives during the downfall of President Obote. General Idi Amin comes to power and asks Garrigan to become his personal doctor.",
+      "rating": "6.71",
+      "genre": "drama",
+      "id": 6
+    },
+    {
+      "title": "The Sixth Sense",
+      "excerpt": "Following an unexpected tragedy, a child psychologist named Malcolm Crowe meets an nine year old boy named Cole Sear, who is hiding a dark secret.",
+      "rating": "8.0",
+      "genre": "thriller",
+      "id": 7
+    }
+  ]
 }

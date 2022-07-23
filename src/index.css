@@ -11,6 +11,23 @@ a {
   text-decoration: none;
 }
 
+h2 {
+  font-size: 1.25em;
+}
+
+button {
+  background: #f1356d;
+  color: #fff;
+  border: 0;
+  padding: 8px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.delete {
+  background: #f13535
+}
+
 .fs-small {
   font-size: 0.5em;
 }
@@ -26,7 +43,8 @@ a {
 
 .navbar h1 {
   color: #f1356d;
-  font-family: 'Montserrat', cursive;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
 }
 
 .navbar .links {
@@ -48,7 +66,7 @@ a {
 }
 
 .content {
-  max-width: 600px;
+  max-width: 980px;
   margin: 40px auto;
   padding: 20px;
 }
@@ -70,7 +88,6 @@ a {
 }
 
 .movie-preview h2 {
-  font-size: 1.25em;
   color: #e9c46a;
   margin-bottom: 8px;
 }
@@ -88,4 +105,40 @@ a {
   background-color: #264653;
   border-radius: 10px;
   box-shadow: 5px 5px 10px rgba(0,0,0,0.2);
+}
+
+/* Movie details page */
+.movie-details h2 {
+  color:#f1356d;
+  margin-bottom: 10px;
+}
+
+.movie-details div {
+  margin: 20px 0;
+}
+
+/* Add movie form */
+.movies {
+  max-width: 400px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.movies label {
+  text-align: left;
+  display: block;
+}
+
+.movies h2 {
+  color:#f1356d;
+  margin-bottom: 30px;
+}
+
+.movies input, .movies textarea, .movies select {
+  width: 100%;
+  padding: 6px 10px;
+  margin: 10px 0;
+  border: 1px solid #ddd;
+  box-sizing: border-box;
+  display: block;
 }
