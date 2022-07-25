@@ -7,6 +7,11 @@
   color: #333;
 }
 
+body {
+  background: transparent linear-gradient(136deg, #1C1C1C 0%, #950137 100%) 0% 0% no-repeat padding-box;
+
+}
+
 a {
   text-decoration: none;
 }
@@ -36,15 +41,16 @@ button {
   padding: 20px;
   display: flex;
   align-items: center;
-  max-width: 600px;
+  max-width: 1640px;
   margin: 0 auto;
   border-bottom: 1px solid #f2f2f2;
+  font-family: 'Montserrat', sans-serif;
 }
 
-.navbar h1 {
-  color: #f1356d;
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 700;
+.nav-title {
+  color: #ffff;
+  text-decoration: underline;
+  text-decoration-color: #fef10d;
 }
 
 .navbar .links {
@@ -55,10 +61,14 @@ button {
   margin-left: 16px;
   text-decoration: none;
   padding: 6px;
+  color: #ffff;
+  font-size:33px;
+  font-weight: bold;
 }
 
 .navbar a:hover {
-  color: #f1356d;
+  text-decoration: underline;
+  text-decoration-color: #fef10d;
 }
 
 .sans-serif {
