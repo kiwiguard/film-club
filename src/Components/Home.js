@@ -1,6 +1,7 @@
 /*npx json-server --watch data/db.json --port 8000*/
 import useFetch from "./useFetch";
 import MovieList from "./MovieList";
+import nowStreamingImg from "../Images/placholder.jpg";
 
 const Home = () => {
   const {
@@ -11,9 +12,21 @@ const Home = () => {
 
   return (
     <div className="home">
-      {isPending && <div>Loading...</div>}
-      {error && <div>Oops {error}</div>}
-      {movies && <MovieList movies={movies} title="Topplista" />}
+      <div className="nowStreaming">
+        <div className="blur-overlay"></div>
+        <img
+          className="nowStreamingImg"
+          src={nowStreamingImg}
+          alt="now streaming background"
+        />
+      </div>
+      <div className="toplist">
+        <h1 className="toplist-title">Topplista</h1>
+        <h2 className="toplist-arrow">\/</h2>
+        {isPending && <div>Loading...</div>}
+        {error && <div>Oops {error}</div>}
+        {movies && <MovieList movies={movies} title="Topplista" />}
+      </div>
     </div>
   );
 };
