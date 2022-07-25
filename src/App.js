@@ -4,6 +4,7 @@ import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import Movies from "./Components/Movies";
 import MovieDetails from "./Components/MovieDetails";
 import NotFound from "./Components/NotFound";
+import Toplist from "./Components/Toplist";
 
 function App() {
   return (
@@ -20,6 +21,9 @@ function App() {
             </Route>
             <Route exact path="/movies/:id">
               <MovieDetails />
+            </Route>
+            <Route exact path="/toplist">
+              <Toplist />
             </Route>
             <Route path="*">
               <NotFound />
