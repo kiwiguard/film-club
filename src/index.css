@@ -9,7 +9,7 @@
 
 body {
   background: transparent linear-gradient(136deg, #1C1C1C 0%, #950137 100%) 0% 0% no-repeat padding-box;
-
+  min-height: 100vh;
 }
 
 a {
@@ -209,4 +209,5 @@ button {
   border: 1px solid #ddd;
   box-sizing: border-box;
   display: block;
+  color: #1C1C1C;
 }

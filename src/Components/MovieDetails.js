@@ -7,11 +7,11 @@ const MovieDetails = () => {
     data: movie,
     error,
     isPending,
-  } = useFetch("http://localhost:8000/movies/" + id);
+  } = useFetch("http://localhost:4000/api/movies/" + id);
   const history = useHistory();
 
   const handleClick = () => {
-    fetch("http://localhost:8000/movies/" + movie.id, {
+    fetch("http://localhost:4000/api/movies/" + movie.id, {
       method: "DELETE",
     }).then(() => {
       history.push("/");

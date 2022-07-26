@@ -6,16 +6,17 @@ const Movies = () => {
   const [excerpt, setExcerpt] = useState("");
   const [rating, setRating] = useState("");
   const [genre, setGenre] = useState("drama");
+  const [watched, setWatched] = useState(true);
   const [isPending, setIsPending] = useState(false);
   const history = useHistory();
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    const movie = { title, excerpt, rating, genre };
+    const movie = { title, excerpt, rating, genre, watched };
 
     setIsPending(true);
 
-    fetch("http://localhost:8000/movies", {
+    fetch("http://localhost:4000/api/movies", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(movie),
@@ -58,6 +59,13 @@ const Movies = () => {
           <option value="action">Action</option>
           <option value="thriller">Thriller</option>
         </select>
+        <label>Har du sett filmen?</label>
+        <input
+          value={watched}
+          defaultChecked={true}
+          onChange={(e) => setWatched(e.target.defaultCheked)}
+          type="checkbox"
+        />
         {!isPending && <button>Lägg till</button>}
         {isPending && <button disabled>Lägger till...</button>}
       </form>

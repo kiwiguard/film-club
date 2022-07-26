@@ -5,8 +5,8 @@ const MovieList = ({ movies, title }) => {
     <div className="movie-list">
       <h1>{title}</h1>
       {movies.map((movie) => (
-        <div className="movie-preview" key={movie.id}>
-          <Link to={`/movies/${movie.id}`}>
+        <div className="movie-preview" key={movie._id}>
+          <Link to={`/movies/${movie._id}`}>
             <h2>{movie.title}</h2>
             <p>Rating {movie.rating}</p>
           </Link>
