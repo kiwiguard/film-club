@@ -146,22 +146,35 @@ button {
 
 /* movie previews / list*/
 .movie-preview {
-  padding: 10px 16px;
+  width: 480px; 
+  height: 338px;
   margin: 20px 0;
-  border-bottom: 1px solid #2a9d8f;
+  border-radius:  0px 0px 10px 10px;
+  background:#ffffff21 0% 0% no-repeat padding-box;
+  opacity: 1;
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
 }
+
+.movie-preview--img {
+  max-width: 480px;
+}
+
 
 .movie-preview:hover {
   box-shadow: 1px 3px 5px rgba(0,0,0,0.1);
 }
 
 .movie-preview h2 {
-  color: #e9c46a;
+  color: #fff;
+  font-weight: 400;
   margin-bottom: 8px;
 }
 
 .movie-preview p {
-  color: #f4a261;
+  font-weight: 900;
+  font-size: 1.65em;
+  color: #fff;
 }
 
 .movie-list h1 {
@@ -170,7 +183,6 @@ button {
 }
 .movie-list {
   padding: 10px 20px;
-  background-color: #264653;
   border-radius: 10px;
   box-shadow: 5px 5px 10px rgba(0,0,0,0.2);
 }
