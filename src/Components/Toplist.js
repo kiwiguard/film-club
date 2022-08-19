@@ -14,12 +14,12 @@ const Toplist = () => {
       {error && <div>Oops {error}</div>}
       {movies && <MovieList movies={movies} title="Topplista" />}
 
-      {movies && (
+      {/*       {movies && (
         <MovieList
           movies={movies.filter((movie) => movie.genre === "drama")}
           title="Bästa Drama"
         />
-      )}
+      )} */}
     </div>
   );
 };

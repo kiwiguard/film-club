@@ -13,6 +13,34 @@ const Home = () => {
   return (
     <div className="home">
       <div className="nowStreaming">
+        <div className="nowStreaming-info">
+          <div className="nowStreaming-info--movie-details">
+            <h1 className="nowStreaming-info--title">DUNE (2021)</h1>
+            <p className="movie-details--specs">
+              2h 35m • Science Fiction, Äventyr
+            </p>
+            <p className="nowStreaming-info--excerpt">
+              Paul Atreides är en briljant och talangfull ung man född med ett
+              storslaget öde som måste resa till den farligaste planeten i
+              universum för att säkra sin familjs och sitt folks framtid. När
+              illasinnade krafter kastas in i en konflikt om tillgången till
+              planetens mest värdefulla råvara - ett ämne med förmågan att låsa
+              upp mänsklighetens fulla potential - kommer bara de som övervinner
+              sina rädslor att överleva.
+            </p>
+            <div className="nowStreaming-info--showing">
+              <p>Visningstillfälle</p>
+              <p>Lördag 7/8 20:00</p>
+              <p>Streamas på HBO MAX</p>
+            </div>
+          </div>
+          <img
+            className="nowStreaming-poster"
+            src={nowStreamingImg}
+            alt="now streaming poster"
+          />
+        </div>
+
         <div className="blur-overlay"></div>
         <img
           className="nowStreamingImg"
@@ -21,7 +49,7 @@ const Home = () => {
         />
       </div>
       <div className="toplist">
-        <h1 className="toplist-title">Topplista</h1>
+        <h1 className="toplist-title">TOPPLISTA</h1>
         <h2 className="toplist-arrow">\/</h2>
         {isPending && <div>Loading...</div>}
         {error && <div>Oops {error}</div>}
