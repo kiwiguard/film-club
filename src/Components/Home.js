@@ -15,11 +15,11 @@ const Home = () => {
       <div className="nowStreaming">
         <div className="nowStreaming-info">
           <div className="nowStreaming-info--movie-details">
-            <h1 className="nowStreaming-info--title">DUNE (2021)</h1>
-            <p className="movie-details--specs">
+            <h1 className="nowStreaming-info--title fs-alt">DUNE (2021)</h1>
+            <p className="movie-details--specs fs-30">
               2h 35m • Science Fiction, Äventyr
             </p>
-            <p className="nowStreaming-info--excerpt">
+            <p className="nowStreaming-info--excerpt fs-30">
               Paul Atreides är en briljant och talangfull ung man född med ett
               storslaget öde som måste resa till den farligaste planeten i
               universum för att säkra sin familjs och sitt folks framtid. När
@@ -28,10 +28,19 @@ const Home = () => {
               upp mänsklighetens fulla potential - kommer bara de som övervinner
               sina rädslor att överleva.
             </p>
-            <div className="nowStreaming-info--showing">
-              <p>Visningstillfälle</p>
-              <p>Lördag 7/8 20:00</p>
-              <p>Streamas på HBO MAX</p>
+            <div className="nowStreaming-info--showing-wrapper">
+              <div className="nowStreaming-info--showing">
+                <p className="fs-yellow fs-alt nowStreaming-info--showing-title">
+                  Visningstillfälle
+                </p>
+                <p className="nowStreaming-info--date fs-alt">
+                  Lördag 7/8 20:00
+                </p>
+                <p>Streamas på HBO MAX</p>
+              </div>
+              <button className="btn-primary fs-alt flex-bottom">
+                Betygsätt
+              </button>
             </div>
           </div>
           <img
@@ -49,7 +58,7 @@ const Home = () => {
         />
       </div>
       <div className="toplist">
-        <h1 className="toplist-title">TOPPLISTA</h1>
+        <h1 className="toplist-title fs-alt">TOPPLISTA</h1>
         <h2 className="toplist-arrow">\/</h2>
         {isPending && <div>Loading...</div>}
         {error && <div>Oops {error}</div>}
