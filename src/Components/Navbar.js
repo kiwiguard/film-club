@@ -6,7 +6,7 @@ const Navbar = () => {
       <Link to="/">
         <h1 className="nav-title fs-alt">
           BÖRJES FILMKLUBB{" "}
-          <span class="material-symbols-outlined fs-36 fs-yellow fill no-margin rotate-25">
+          <span className="material-symbols-outlined fs-36 fs-yellow fill no-margin rotate-25">
             movie
           </span>
         </h1>

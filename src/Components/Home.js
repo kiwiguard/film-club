@@ -65,7 +65,9 @@ const Home = () => {
       </div>
       <div className="toplist">
         <h1 className="toplist-title fs-alt">TOPPLISTA</h1>
-        <h2 className="toplist-arrow">\/</h2>
+        <span className="material-symbols-outlined fs-56 toplist-arrow">
+          expand_more
+        </span>
         {isPending && <div>Loading...</div>}
         {error && <div>Oops {error}</div>}
         {movies && <MovieList movies={movies} title="Topplista" />}
