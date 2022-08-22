@@ -16,10 +16,10 @@ const Home = () => {
         <div className="nowStreaming-info">
           <div className="nowStreaming-info--movie-details">
             <h1 className="nowStreaming-info--title fs-alt">DUNE (2021)</h1>
-            <p className="movie-details--specs fs-30">
+            <p className="movie-details--specs fs-24">
               2h 35m • Science Fiction, Äventyr
             </p>
-            <p className="nowStreaming-info--excerpt fs-30">
+            <p className="nowStreaming-info--excerpt fs-24">
               Paul Atreides är en briljant och talangfull ung man född med ett
               storslaget öde som måste resa till den farligaste planeten i
               universum för att säkra sin familjs och sitt folks framtid. När
@@ -31,6 +31,9 @@ const Home = () => {
             <div className="nowStreaming-info--showing-wrapper">
               <div className="nowStreaming-info--showing">
                 <p className="fs-yellow fs-alt nowStreaming-info--showing-title">
+                  <span className="material-symbols-outlined fs-yellow fs-30">
+                    calendar_month
+                  </span>
                   Visningstillfälle
                 </p>
                 <p className="nowStreaming-info--date fs-alt">
@@ -38,8 +41,11 @@ const Home = () => {
                 </p>
                 <p>Streamas på HBO MAX</p>
               </div>
-              <button className="btn-primary fs-alt flex-bottom">
+              <button className="btn-primary btn-rating fs-alt flex-bottom">
                 Betygsätt
+                <span className="material-symbols-outlined no-margin fill fs-30">
+                  thumb_up
+                </span>
               </button>
             </div>
           </div>

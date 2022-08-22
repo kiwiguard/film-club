@@ -4,7 +4,12 @@ const Navbar = () => {
   return (
     <nav className="navbar">
       <Link to="/">
-        <h1 className="nav-title fs-alt">BÖRJES FILMKLUBB</h1>
+        <h1 className="nav-title fs-alt">
+          BÖRJES FILMKLUBB{" "}
+          <span class="material-symbols-outlined fs-36 fs-yellow fill no-margin rotate-25">
+            movie
+          </span>
+        </h1>
       </Link>
       <div className="links">
         <Link to="/movies">filmer</Link>

@@ -17,13 +17,13 @@ a {
 }
 
 p {
-  font-size: 1.3em;
+  font-size: 1.3rem;
   margin-top: 10px;
   line-height: 125%;
 }
 
 h2 {
-  font-size: 1.4em;
+  font-size: 1.4rem;
 }
 
 button {
@@ -35,6 +35,31 @@ button {
   cursor: pointer;
 }
 
+option {
+  color: #1C1C1C;
+}
+
+span {
+  margin-right: 30px;
+}
+
+.no-margin {
+  margin: 0;
+}
+
+.rotate-25 {
+  transform: rotate(-25deg);
+}
+
+.fs-align-right {
+  text-align: right;
+}
+
+.fill {
+  font-variation-settings:
+  'FILL' 1
+}
+
 .fs-alt{
   font-family: 'Montserrat Alternates', sans-serif;
 }
@@ -44,11 +69,23 @@ button {
 }
 
 .fs-small {
-  font-size: 0.5em;
+  font-size: 0.5rem;
+}
+
+.fs-24 {
+  font-size: 1.5rem;
+}
+
+.fs-25 {
+  font-size: 1.6rem;
 }
 
 .fs-30 {
-  font-size: 1.5em;
+  font-size: 1.9rem;
+}
+
+.fs-36 {
+  font-size: 2.25rem;
 }
 
 .fs-yellow {
@@ -99,7 +136,7 @@ button {
 
 .btn-primary {
   text-transform: uppercase;
-  font-size: 1.9em;
+  font-size: 1.9rem;
   font-weight: 900;
   padding: 15px 40px;
   border-radius: 36px;
@@ -108,10 +145,16 @@ button {
   display: inline-block;
 }
 
+.btn-rating {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  gap: 13px;
+}
+
 .flex-bottom {
   align-self: flex-end;
 }
-
 
 /* Hompage styles */
 .home {
@@ -169,7 +212,7 @@ button {
 }
 
 .nowStreaming-info--title {
-  font-size: 4em;
+  font-size: 4rem;
 }
 
 .nowStreaming-info--movie-details {
@@ -201,14 +244,14 @@ button {
 }
 
 .nowStreaming-info--showing-title {
-  font-size: 1.95em;
+  font-size: 1.95rem;
   font-weight: 900;
   text-transform: uppercase;
 }
 
 .nowStreaming-info--date {
   font-weight: 900;
-  font-size: 2.6em;
+  font-size: 2.6rem;
   text-transform: uppercase;
 }
 
@@ -286,7 +329,7 @@ button {
 
 .movie-preview p {
   font-weight: 900;
-  font-size: 1.65em;
+  font-size: 1.65rem;
   color: #fff;
 }
 

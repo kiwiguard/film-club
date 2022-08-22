@@ -11,7 +11,7 @@ const MovieDetails = () => {
   const history = useHistory();
 
   const handleClick = () => {
-    fetch("http://localhost:4000/api/movies/" + movie.id, {
+    fetch("http://localhost:4000/api/movies/" + movie._id, {
       method: "DELETE",
     }).then(() => {
       history.push("/");
