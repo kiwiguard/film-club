@@ -1,18 +1,20 @@
 import { Link } from "react-router-dom";
-import placeholderHorizontal from "../Images/placeholder_horizontal.jpg";
 
-const MovieList = ({ movies }) => {
+const DataList = ({ movies }) => {
+  const data = Object.entries(movies.results);
+  console.log(data[0][1].vote_average);
+
   return (
     <div className="movie-list">
-      {movies.map((movie) => (
+      {data.map((movie) => (
         <div className="movie-preview" key={movie._id}>
           <Link to={`/movies/${movie._id}`}>
             <img
               className="movie-preview--img"
-              src={placeholderHorizontal}
-              alt="placeholder movieposter"
+              src={`https://image.tmdb.org/t/p/w500${movie.poster_path}`}
+              alt={movie.title}
             />
-            <p className="movie-preview--rating">{movie.rating}</p>
+            <p className="movie-preview--rating">{movie.vote_average}</p>
             <h2 className="movie-preview--title">{movie.title}</h2>
           </Link>
         </div>
@@ -20,5 +22,4 @@ const MovieList = ({ movies }) => {
     </div>
   );
 };
-
-export default MovieList;
+export default DataList;

@@ -1,14 +1,12 @@
 import { useHistory, useParams } from "react-router-dom";
-import useFetch from "./useFetch";
+import useFetchMovieData from "./useFetchMovieData";
 
 const MovieDetails = () => {
   const { id } = useParams();
-  const {
-    data: movie,
-    error,
-    isPending,
-  } = useFetch("http://localhost:4000/api/movies/" + id);
+  const { data: movie, error, isPending } = useFetchMovieData("127+hours");
   const history = useHistory();
+
+  console.log(movie);
 
   const handleClick = () => {
     fetch("http://localhost:4000/api/movies/" + movie._id, {
@@ -24,9 +22,14 @@ const MovieDetails = () => {
       {error && <div>{error}</div>}
       {movie && (
         <article>
-          <h2>{movie.title}</h2>
-          <p>{movie.rating}</p>
-          <div>{movie.excerpt}</div>
+          <h2>{movie.results[0].title}</h2>
+          <img
+            className="movie-preview--img"
+            src={`https://image.tmdb.org/t/p/w500${movie.results[0].poster_path}`}
+            alt={movie.results[0].title}
+          />
+          <p>{movie.results[0].vote_average}</p>
+          <div>{movie.results[0].overview}</div>
           <button className="delete" onClick={handleClick}>
             Radera
           </button>
