@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 
 const DataList = ({ movies }) => {
   const data = Object.entries(movies.results);
-  console.log(data[0][1].vote_average);
+  console.log(data);
 
   return (
     <div className="movie-list">
@@ -11,7 +11,7 @@ const DataList = ({ movies }) => {
           <Link to={`/movies/${movie._id}`}>
             <img
               className="movie-preview--img"
-              src={`https://image.tmdb.org/t/p/w500${movie.poster_path}`}
+              src={`https://image.tmdb.org/t/p/w500/${movie.poster_path}`}
               alt={movie.title}
             />
             <p className="movie-preview--rating">{movie.vote_average}</p>

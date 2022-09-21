@@ -1,6 +1,7 @@
 import MovieForm from "./MovieForm";
 import useFetchMovieData from "./useFetchMovieData";
 import DataList from "./DataList";
+import useFetchAll from "./useFetchAll";
 
 const Movies = () => {
   const {
@@ -9,6 +10,8 @@ const Movies = () => {
     isPending,
     error,
   } = useFetchMovieData("eurotrip");
+
+  useFetchAll();
 
   //console.log(movies);
   //console.log(movies.result.original_title);

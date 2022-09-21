@@ -3,10 +3,8 @@ import useFetchMovieData from "./useFetchMovieData";
 
 const MovieDetails = () => {
   const { id } = useParams();
-  const { data: movie, error, isPending } = useFetchMovieData("127+hours");
+  const { data: movie, error, isPending } = useFetchMovieData("gladiator");
   const history = useHistory();
-
-  console.log(movie);
 
   const handleClick = () => {
     fetch("http://localhost:4000/api/movies/" + movie._id, {
@@ -15,6 +13,8 @@ const MovieDetails = () => {
       history.push("/");
     });
   };
+
+  console.log(movie);
 
   return (
     <div className="movie-details">
